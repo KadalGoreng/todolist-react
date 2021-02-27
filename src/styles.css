@@ -11,6 +11,9 @@
   color: var(--main-red-color);
 }
 
+.main-black-color {
+  color: var(--main-black-color);
+}
 html {
   font-size: 10px;
 }
@@ -25,7 +28,8 @@ body {
   height: 100vh;
 }
 
-body. html {
+body,
+html {
   margin: 0;
   padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -35,8 +39,9 @@ body. html {
 .container {
   width: 600px;
   height: 800px;
-  background-color: #f2eecb;
+  background-color: #b0e7e9;
   border-radius: 4px;
+
   padding: 32px;
 }
 
@@ -57,15 +62,17 @@ body. html {
 .header-title {
   flex: 1;
   text-align: center;
+
   color: var(--main-black-color);
 
-  font-size: 36px;
-  font-family: "Homemade Apple", sans-serif;
+  font-size: 3.6rem;
+  font-family: "homemade apple", sans-serif;
+
   text-transform: lowercase;
 }
 
 .header-btn {
-  font-size: 18px;
+  font-size: 1.8rem;
   font-family: "bungee", sans-serif;
 
   padding: 16px;
@@ -85,7 +92,7 @@ body. html {
 }
 
 .add {
-  padding: 11px;
+  padding: 16px;
 }
 
 .add-form {
@@ -96,7 +103,7 @@ body. html {
 .add-input {
   background: unset;
   border: unset;
-  padding: 6px;
+  padding: 0 64px;
 
   flex: 1;
 
@@ -104,15 +111,14 @@ body. html {
   outline: unset;
 
   font-family: "Homemade Apple", sans-serif;
-  font-size: 16px;
+  font-size: 11px;
   text-transform: lowercase;
 }
 
 .add-btn {
   font-size: 18px;
-  font-family: "bungee", sans-serif;
+  font-family: "Bungee", sans-serif;
 
-  padding: 11px;
   padding-right: unset;
   cursor: pointer;
 
@@ -142,4 +148,10 @@ body. html {
   font-size: 24px;
 
   border-bottom: 1px solid var(--main-red-color);
+}
+
+.todo-text {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
 }
