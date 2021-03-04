@@ -7,15 +7,29 @@ import Todos from "../components/Todos";
 
 const TodoList = () => {
   const [todos, setTodos] = useState([
-    { text: "belajar 1" },
-    { text: "belajar 2" },
-    { text: "belajar 3" }
+    { text: "belajar 1", isCompleted: false },
+    { text: "belajar 2", isCompleted: false },
+    { text: "belajar 3", isCompleted: false }
   ]);
 
   const [showAdd, setShowAdd] = useState(false);
 
   const addTodo = (value) => {
-    const addedTodo = [...todos, { text: value }];
+    if (todos.length > 9) {
+      alert("Maksimal 10 anjing");
+      return;
+    }
+
+    const addedTodo = [...todos, { text: value, isCompleted: false }];
+
+    setTodos(addedTodo);
+  };
+
+  const clearTodos = () => setTodos([]);
+
+  const completeTodo = (index) => {
+    const addedTodo = [...todos];
+    addedTodo[index].isCompleted = !addedTodo[index].isCompleted;
 
     setTodos(addedTodo);
   };
@@ -24,9 +38,13 @@ const TodoList = () => {
 
   return (
     <Paper>
-      <Header showAddToggle={showAddToggle} showAdd={showAdd} />
+      <Header
+        showAddToggle={showAddToggle}
+        showAdd={showAdd}
+        clearTodos={clearTodos}
+      />
       <TodoForm addTodo={addTodo} showAdd={showAdd} />
-      <Todos todos={todos} />
+      <Todos todos={todos} completeTodo={completeTodo} />
     </Paper>
   );
 };
