@@ -1,0 +1,11 @@
+.todoPlaceholderText {
+  font-family: "Homemade Apple", sans-serif;
+  font-size: 24px;
+  text-align: center;
+  padding: 16px;
+}
+
+.addButtonPlaceholderText {
+  font-family: "Bungee", sans-serif;
+  font-size: 24px;
+}

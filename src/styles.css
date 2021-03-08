@@ -45,7 +45,7 @@ html {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.container {
+/* .container {
   width: 600px;
   height: 800px;
   background-color: #c9fffa;
@@ -61,15 +61,15 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
+} */
 
-.header {
+/* .header {
   display: flex;
   align-items: flex-start;
 }
 
 .header-title {
-  /* flex: 1; */
+  flex: 1;
   width: 52%;
   text-align: center;
 
@@ -79,7 +79,7 @@ html {
   font-family: "homemade apple", sans-serif;
 
   text-transform: lowercase;
-}
+} */
 
 /* .header-btn {
   width: 24%;
@@ -102,7 +102,7 @@ html {
   text-shadow: 1px 1px 2px var(--main-black-color);
 } */
 
-.add {
+/* .add {
   padding: 16px;
 }
 
@@ -136,7 +136,7 @@ html {
   background: unset;
   border: unset;
   outline: unset;
-}
+} */
 
 .add-btn.main-black-color:active {
   text-shadow: 1px 1px 2px var(--main-black-color);
@@ -149,7 +149,7 @@ html {
   min-height: 500px;
 }
 
-.todo {
+/* .todo {
   position: relative;
 
   flex: 1 0 auto;
@@ -168,9 +168,9 @@ html {
   position: absolute;
   left: 50%;
   transform: translate(-50%);
-}
+} */
 
-.todo-placeholder-text {
+/* .todo-placeholder-text {
   font-family: "Homemade Apple", sans-serif;
   font-size: 24px;
   text-align: center;
@@ -180,4 +180,4 @@ html {
 .add-button-placeholder-text {
   font-family: "Bungee", sans-serif;
   font-size: 24px;
-}
+} */
