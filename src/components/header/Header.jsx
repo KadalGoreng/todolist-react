@@ -3,7 +3,7 @@
 import { jsx, useTheme } from "@emotion/react";
 import PropTypes from "prop-types";
 
-import Button from "../button/ButtonNoJSX";
+import Button from "../button/ButttonClass";
 import Container from "../../Layout/Container";
 import Item from "../../Layout/Item";
 import * as styles from "./header.styles";
