@@ -21,6 +21,5 @@ export const addInput = ({ theme }) =>
     border-bottom: 1px solid ${theme.color.primary.red};
     outline: unset;
     font-family: "Homemade Apple", sans-serif;
-    font-size: 11px;
-    text-transform: lowercase;
+    font-size: 20px;
   `;

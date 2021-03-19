@@ -1,10 +1,8 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
 // import React from "react";
-import { jsx, useTheme } from "@emotion/react";
+import { jsx } from "@emotion/react";
 import PropTypes from "prop-types";
-
-// import styles from "./todos.module.css";
 import * as styles from "./todos.styles";
 
 import Todo from "../todo/Todo";

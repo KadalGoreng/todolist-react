@@ -1,10 +1,7 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
-// import React from "react";
 import { jsx, useTheme } from "@emotion/react";
 import PropTypes from "prop-types";
-
-// import styles from "./todo.module.css";
 import * as styles from "./todo.styles";
 
 const Todo = ({ text, completeTodo, index, isCompleted }) => {
