@@ -17,4 +17,5 @@ export const frame = ({ theme }) =>
     flex-direction: column; */
     justify-content: space-between;
     border: 1px solid ${theme.color.primary.black};
+    height: 100%;
   `;
