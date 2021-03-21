@@ -5,7 +5,7 @@ import { jsx } from "@emotion/react";
 import PropTypes from "prop-types";
 import * as styles from "./todos.styles";
 
-import Todo from "../todo/Todo";
+import Todo from "../todo/TodoClass";
 import Container from "../../Layout/Container";
 
 const Todos = ({ todos, completeTodo }) => {

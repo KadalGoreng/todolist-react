@@ -8,13 +8,14 @@ const StyledButton = styled.button`
   font-family: "Bungee", sans-serif;
   color: ${(props) => props.textColor};
   text-align: ${(props) => props.align};
-
-  /* width: 24%; */
   padding: 16px;
   cursor: pointer;
   background: unset;
   border: unset;
   outline: unset;
+  &:active {
+    text-shadow: 1px 1px 2px ${(props) => props.theme.color.primary.black};
+  }
 `;
 
 class Button extends React.Component {
