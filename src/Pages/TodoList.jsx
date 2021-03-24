@@ -1,16 +1,24 @@
 import React, { useState } from "react";
 
-import Paper from "../components/paper/PaperClass";
-import Header from "../components/header/HeaderClass";
-import TodoForm from "../components/todoform/TodoFormClass";
-import Todos from "../components/todos/TodosClass";
+import useStateWithLocalStorage from "../hooks/useStateWithLocalStorage";
+import Paper from "../components/paper/Paper";
+import Header from "../components/header/Header";
+import TodoForm from "../components/todoform/TodoForm";
+import Todos from "../components/todos/Todos";
 
 import Container from "../Layout/Container";
 
 const TodoList = () => {
-  const [todos, setTodos] = useState([]);
-
+  // const [todos, setTodos] = useState([]);
+  // const [todos, setTodos] = useState(
+  //   JSON.parse(localStorage.getItem("todos")) || []
+  // );
+  const [todos, setTodos] = useStateWithLocalStorage("todo");
   const [showAdd, setShowAdd] = useState(false);
+
+  // useEffect(() => {
+  //   localStorage.setItem("todos", JSON.stringify(todos));
+  // }, [todos]);
 
   const addTodo = (value) => {
     if (todos.length > 9) {
@@ -23,7 +31,13 @@ const TodoList = () => {
     setTodos(addedTodo);
   };
 
-  const clearTodos = () => !showAdd && setTodos([]);
+  const clearTodos = () => {
+    if (showAdd) {
+      alert("Finish add todo before clear");
+      return;
+    }
+    setTodos([]);
+  };
 
   const completeTodo = (index) => {
     const addedTodo = [...todos];

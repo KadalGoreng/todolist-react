@@ -14,6 +14,12 @@ export const addButtonPlaceholderText = () =>
     font-size: 24px;
   `;
 
+export const seeAboutPagePlaceHolderText = () =>
+  css`
+    font-family: "Bungee", sans-serif;
+    font-size: 18px;
+  `;
+
 // export const todos = () =>
 //   css`
 //     display: flex;
