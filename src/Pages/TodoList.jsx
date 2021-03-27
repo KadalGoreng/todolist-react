@@ -13,7 +13,7 @@ const TodoList = () => {
   // const [todos, setTodos] = useState(
   //   JSON.parse(localStorage.getItem("todos")) || []
   // );
-  const [todos, setTodos] = useStateWithLocalStorage("todo");
+  const [todos, setTodos] = useStateWithLocalStorage("todos");
   const [showAdd, setShowAdd] = useState(false);
 
   // useEffect(() => {

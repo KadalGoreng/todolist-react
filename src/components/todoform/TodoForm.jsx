@@ -18,12 +18,12 @@ const TodoForm = ({ addTodo, showAdd }) => {
     e.preventDefault();
 
     if (!value) {
-      alert("Rak Entok Kosong Cok");
+      alert("No blank todo!");
       return;
     }
 
     if (value.length > 40) {
-      alert("Kepanjangan cok");
+      alert("Create shorted todo!");
       setValue("");
       return;
     }

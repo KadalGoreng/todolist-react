@@ -3,7 +3,7 @@ import "./styles.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { ThemeProvider } from "@emotion/react";
 
-import TodoList from "./Pages/TodoList";
+import TodoList from "./Pages/TodoListClass";
 import About from "./Pages/About";
 
 const theme = {
